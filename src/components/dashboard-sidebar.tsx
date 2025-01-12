@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 
 const boards = [
-  { id: 1, name: "Platform Launch", isActive: true },
+  { id: 1, name: "Platform Launch"},
   { id: 2, name: "Marketing Plan" },
   { id: 3, name: "Roadmap" },
 ]
@@ -26,7 +26,7 @@ export default function DasboardSidebar() {
                     : "bg-transparent hover:bg-[rgba(99,95,199,.1)] hover:text-[#635fc7] text-grey"
                   }`
                 }  >
-                  <span className=" px-4 flex gap-3 items-center text-grey hover:text-[#635fc7] dark:text-white font-semibold text-lg">
+                  <span className=" px-4 flex gap-3 items-center text-grey  dark:text-white font-semibold text-lg">
                     <LayoutDashboard width={20} height={20} />
                     {item.name}
                   </span>
