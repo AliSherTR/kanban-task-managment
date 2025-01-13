@@ -13,7 +13,7 @@ export default function DasboardLayout() {
     return (
         <SidebarProvider >
             <div className="flex h-screen w-full overflow-hidden">
-                <Sidebar className="dark:bg-[#2b2c37] dark:border-[#2b2c37] bg-white">
+                <Sidebar className="dark:bg-[#2b2c37]  dark:border-[#2b2c37] bg-white">
                     <SidebarHeader className="p-4">
                         <h1 className="text-4xl font-bold dark:text-white mb-5 mt-2">Kanban</h1>
                     </SidebarHeader>
