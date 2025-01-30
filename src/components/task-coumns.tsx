@@ -13,6 +13,8 @@ export default function TaskColumns({ boards: initialBoards }: { boards: Board[]
         const sourceBoard = boards[sourceBoardIndex];
         const targetBoard = boards[targetBoardIndex];
         const task = sourceBoard.tasks.find((t) => t.id === taskId);
+        console.log(sourceBoard);
+        console.log(targetBoard)
 
         if (!task) return;
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Task } from "@/types";
 
 interface BoardColumnProps {
@@ -24,7 +24,9 @@ export default function BoardColumn({ tasks, onDragStart }: BoardColumnProps) {
                 <p>1 of 2 subtasks</p>
               </div>
             </DialogTrigger>
-            <DialogContent></DialogContent>
+            <DialogContent>
+              <DialogTitle>{task.name}</DialogTitle>
+            </DialogContent>
           </Dialog>
         </div>
       ))}
